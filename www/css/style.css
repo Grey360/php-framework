@@ -5,9 +5,13 @@ html, body {
 }
 
 body {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    background: url(/www/pictures/1.jpg) no-repeat;
+    background-size: cover;
 }
 
 #main, #container {

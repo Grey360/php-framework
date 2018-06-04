@@ -6,7 +6,9 @@
  * Time: 15:22
  */
 
-class AppController extends Controller
+class AppController extends Root\System\Controller
 {
-    
+    public function __construct($template) {
+        $this->render($template);
+    }
 }
