@@ -8,7 +8,5 @@
 
 class AppController extends Root\System\Controller
 {
-    public function __construct($template) {
-        $this->render($template);
-    }
+    
 }

@@ -10,11 +10,14 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: url(/www/pictures/1.jpg) no-repeat;
-    background-size: cover;
 }
 
 #main, #container {
     height: 100%;
     width: 100%
+}
+
+#container {
+    background: url(/www/pictures/1.jpg) no-repeat;
+    background-size: cover;
 }

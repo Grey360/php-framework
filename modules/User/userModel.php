@@ -1,16 +1,13 @@
 <?php
 
-class UserModel extends Model {
-
-    public $db;
+class UserModel extends Root\System\Model {
 
     function __construct() {
-        parent();
-        $this->db = Model::$db;
+        __construct::parent();
     }
 
     public function getUsers(){
-        $prepare = $this->db->prepare("SELECT * FROM users");
+        $prepare = Model::$db->prepare("SELECT * FROM users");
         $result = $prepare->execute();
         return $result;
     }

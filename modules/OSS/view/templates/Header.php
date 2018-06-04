@@ -13,8 +13,6 @@
 </head>
 <body>
 <div id="container">
-    <main id="main">
-        <div id="header">
-            <h1>HEADER</h1>
-        </div>
-
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
