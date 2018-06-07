@@ -2,12 +2,12 @@
 
 class UserModel extends Root\System\Model {
 
-    function __construct() {
-        __construct::parent();
+    public function __construct() {
+        parent::__construct();
     }
 
     public function getUsers(){
-        $prepare = Model::$db->prepare("SELECT * FROM users");
+        $prepare = Root\System\Model::$db->prepare("SELECT * FROM users");
         $result = $prepare->execute();
         return $result;
     }
