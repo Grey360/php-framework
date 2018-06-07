@@ -4,7 +4,7 @@ html, body {
     margin: 0 auto;
 }
 
-body {
+body, #main, #container {
     color: white;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,23 @@ body {
 
 #main, #container {
     height: 100%;
-    width: 100%
+    width: 100%;
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.navigation>a, .navigation>div>a {
+    color: white;
+}
+
+.navigation>a:visited, .navigation>div>a:visited {
+    color: gold;
 }
 
 #container {

@@ -11,7 +11,8 @@ return array("routes" => array(
         "view" => "User".DS."view".DS."listUser.php"
     ),
     "/user/add" => array(
-        "add" => "add",
-        "call" => "User".DS."controller".DS."userController"
+        "add" => "UserController",
+        "call" => "User".DS."controller".DS."UserController.php",
+        "view" => "User".DS."view".DS."addUser.php"
     ))
 );

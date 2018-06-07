@@ -16,3 +16,12 @@ for(nav in navArray) {
     };
 }*/
 console.log("Hello World!");
+const userAddLink = document.getElementById("userAddLink");
+const userAddInput = document.getElementById("userAddInput");
+userAddLink.onclick = event => {
+    event.preventDefault();
+    const postRequest = new XMLHttpRequest();
+    const query = "/www/user/add" + userAddInput.value;
+    postRequest.open("POST", query, true);
+    postRequest.send();
+}
