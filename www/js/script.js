@@ -21,7 +21,7 @@ const userAddInput = document.getElementById("userAddInput");
 userAddLink.onclick = event => {
     event.preventDefault();
     const postRequest = new XMLHttpRequest();
-    const query = "/www/user/add" + userAddInput.value;
+    const query = "/www/user/add?query=" + userAddInput.value;
     postRequest.open("POST", query, true);
     postRequest.send();
 }

@@ -5,7 +5,7 @@
         <a href="/user/list">User list</a>
         <div>
             <a id="userAddLink" href="/user/add">User add</a>
-            <input type="text" id="userAdd" name="userAdd">
+            <input type="text" id="userAddInput" name="userAddInput">
         </div>
         
         <a href="/user">User</a>
