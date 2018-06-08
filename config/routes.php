@@ -1,17 +1,18 @@
 <?php
-define(DS, DIRECTORY_SEPARATOR);
-return array("routes" => 
-    array("/" => array(
-        "call" => "..".DS."vendor".DS."Root".DS."Controller.php"
-        )
+return array("routes" => array(
+    "/" => array(
+        "action" => "AppController",
+        "call" => "OSS".DS."controller".DS."AppController.php",
+        "view" => "OSS".DS."view".DS."templates".DS."index.php"
     ),
-    array("/user/list" => array(
-        "action" => "list",
-        "call" => "User".DS."controller".DS."UserController.php"
-        )
+    "/user/list" => array(
+        "action" => "UserController",
+        "call" => "User".DS."controller".DS."UserController.php",
+        "view" => "User".DS."view".DS."listUser.php"
     ),
-    array("user/add" => array(
-        "add" => "add",
-        "call" => "User".DS."controller".DS."userController"
+    "/user/add" => array(
+        "add" => "UserController",
+        "call" => "User".DS."controller".DS."UserController.php",
+        "view" => "User".DS."view".DS."addUser.php"
     ))
 );
