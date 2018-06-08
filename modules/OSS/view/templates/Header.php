@@ -11,8 +11,8 @@
     <!-- CSS -->
     <link href="/www/css/style.css" rel="stylesheet">
 </head>
-<body>
-<div id="container">
+<body class="flex-col-space-around-center">
+<div id="container" class="flex-col-space-around-center">
     <div id="header">
         <h1>HEADER</h1>
     </div>

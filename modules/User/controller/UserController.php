@@ -11,5 +11,5 @@ class UserController extends Root\System\Controller {
         $res = $userModel->getUsers();
         $userView = include_once join(DS, array("view", "userView.php"));
         $this->render($userView);
-    }    
+    }
 }

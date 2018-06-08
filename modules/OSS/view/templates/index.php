@@ -1,14 +1,19 @@
-<main id="main">
+<main id="main" class="flex-col-space-around-center">
     <!-- navigation -->
     <div class="navigation">
-        <a href="/">home</a>
-        <a href="/user/list">User list</a>
+        <div>
+            <a href="/">home</a>
+        </div>
+        <div>
+            <a href="/user/list">User list</a>
+        </div>
         <div>
             <a id="userAddLink" href="/user/add">User add</a>
             <input type="text" id="userAddInput" name="userAddInput">
         </div>
-        
-        <a href="/user">User</a>
+        <div>
+            <a href="/user">User</a>
+        </div>
     </div>
 
     <div>
