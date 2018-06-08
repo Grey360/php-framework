@@ -4,4 +4,5 @@ foreach ($res as $key => $value) { ?>
         <div id="firstname"> <?php $res["firstname"] ?> </div>
         <div id="surname"> <?php $res["surname"] ?> </div>
     </div>
-<?php }
+<?php } ?>
+<a href="/">Previous Page</a>
