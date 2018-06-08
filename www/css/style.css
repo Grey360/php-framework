@@ -51,13 +51,13 @@ body, #main, #container {
     background: black;
 }
 
-#users {
+.users {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#users>div {
+.users>div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
