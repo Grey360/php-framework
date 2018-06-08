@@ -52,13 +52,20 @@ body, #main, #container {
 }
 
 .users {
+    width: 35%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .users>div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border: 1px solid silver;
+}
+
+.users>div>div {
+    padding: 2%;
 }
