@@ -81,3 +81,20 @@ body, #main, #container {
     border-radius: 1em;
     text-align: center;
 }
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+th, td {
+    border: 2px solid burlywood;
+    word-wrap: break-word;
+    padding: 2%;
+}
+
+tbody {
+    overflow: auto;
+}
