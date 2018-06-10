@@ -16,3 +16,4 @@
     <div id="header">
         <h1>HEADER</h1>
     </div>
+    <main id="main" class="flex-col-space-around-center">

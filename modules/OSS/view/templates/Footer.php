@@ -1,3 +1,5 @@
+    <a class="previous-btn" href="/">Previous Page</a>
+    </main>
     <div id="footer">
         <h1>FOOTER</h1>
     </div>

@@ -12,4 +12,14 @@ class UserModel extends Root\System\Model {
     public function getUsers(){
         return self::getModel("users", "*");
     }
+
+    /**
+     * Gets only one user according to surname and firstname.
+     * @param surname Surname.
+     * @param firstname Firstname.
+     */
+    public function getUser($surname, $firstname)
+    {
+        return self::getModel("users WHERE firstname = '$firstname' AND surname = '$surname'", "*");
+    }
 }

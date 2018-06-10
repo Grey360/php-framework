@@ -8,5 +8,11 @@
 
 class AppController extends Root\System\Controller
 {
-    
+    public function doGET() {
+        Root\System\Controller::consoleLog($_GET);
+    }
+
+    public function doPOST() {
+        Root\System\Controller::consoleLog($_POST);
+    }
 }

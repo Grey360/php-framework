@@ -1,40 +1,24 @@
-<main id="main">
-    <div class="users">
-        <div>
-            <div class="users-col">
-                <h3>Firstname</h3>
-            </div>
-            <div class="users-col">
-                <h3>Surname</h3>
-            </div>
-            <div class="users-col">
-                <h3>Street</h3>
-            </div>
-            <div class="users-col">
-                <h3>Number</h3>
-            </div>
-            <div class="users-col">
-                <h3>Country</h3>
-            </div>
-            <div class="users-col">
-                <h3>City</h3>
-            </div>
-        </div>
+    <table class="users">
+        <tr>
+            <th>Firstname</th>
+            <th>Surname</th>
+            <th>Street</th>
+            <th>Number</th>
+            <th>Country</th>
+            <th>City</th>
+        </tr>
         <?php
-
         $users = UserModel::getUsers();
         $usersAddresses = AddressModel::getUsersAddresses();
         foreach ($usersAddresses as $key => $value) { ?> 
-            <div>
-                <div id="firstname<?php echo $value["id"] ?>" class="users-col"> <?php echo $value["firstname"] ?> </div>
-                <div id="surname<?php echo $value["id"] ?>" class="users-col"> <?php echo $value["surname"] ?> </div>
-                <div id="street<?php echo $value["id"] ?>" class="users-col"> <?php echo $value["street"] ?> </div>
-                <div id="number<?php echo $value["id"] ?>" class="users-col"> <?php echo $value["number"] ?> </div>
-                <div id="country<?php echo $value["id"] ?>" class="users-col"> <?php echo $value["country"] ?> </div>
-                <div id="city<?php echo $value["id"] ?>" class="users-col"> <?php echo $value["city"] ?> </div>  
-            </div>
+            <tr>
+                <td id="firstname<?php echo $value["id"] ?>"> <?php echo $value["firstname"] ?> </td>
+                <td id="surname<?php echo $value["id"] ?>"> <?php echo $value["surname"] ?> </td>
+                <td id="street<?php echo $value["id"] ?>"> <?php echo $value["street"] ?> </td>
+                <td id="number<?php echo $value["id"] ?>"> <?php echo $value["number"] ?> </td>
+                <td id="country<?php echo $value["id"] ?>"> <?php echo $value["country"] ?> </td>
+                <td id="city<?php echo $value["id"] ?>"> <?php echo $value["city"] ?> </td>  
+            </tr>
         <?php } ?>
-        <a class="previous-btn" href="/">Previous Page</a>
-    </div>
-    
-</main>
+       
+        </table>
